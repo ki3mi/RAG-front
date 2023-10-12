@@ -1,7 +1,7 @@
 import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
-import NavBar, { ImgNavBar } from './navbar'
+import NavBar, { HeaderImg } from './navbar'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -19,12 +19,10 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <header>
-          <nav>
-            <NavBar></NavBar>
-            {/* <ImgNavBar></ImgNavBar> */}
-          </nav>
+          <NavBar></NavBar>
+          {/* <HeaderImg imagen='/img/bg1.jpg'/> */}
         </header>
-        <main className='dark:bg-black min-h-screen'>
+        <main className='bg-black'>
           {children}
         </main>
       </body>
