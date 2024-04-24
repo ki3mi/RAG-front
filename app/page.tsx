@@ -1,6 +1,6 @@
 import Link from "next/link"
 import { HeaderImg } from "./navbar"
-import ProductComponent, { OfertaComponent, Product2Component } from "./product"
+import ProductComponent, { Product2Component } from "./product"
 import Image from "next/image"
 
 export default function Home() {
